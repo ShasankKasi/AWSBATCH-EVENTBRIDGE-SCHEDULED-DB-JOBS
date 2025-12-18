@@ -34,15 +34,20 @@ EventBridge Scheduler → AWS Batch Job Queue → Fargate Compute Environment
 
 .
 ```text
-.
-├── dockerfile            # Docker image for PowerShell-based batch workloads
-├── main.tf               # Core AWS Batch and EventBridge resources
-├── variables.tf          # Terraform input variables
-├── outputs.tf            # Terraform outputs
-├── versions.tf           # Terraform provider and version constraints
-├── terraform.tfvars      # Environment-specific values
-├── powershell-scripts/   # PowerShell scripts executed by Batch jobs
-└── queryFiles/           # SQL queries executed against the database
+├── infra/
+│   ├── main.tf                 # AWS Batch, EventBridge, IAM, networking
+│   ├── variables.tf            # Terraform input variables
+│   ├── outputs.tf              # Terraform outputs
+│   ├── versions.tf             # Provider and Terraform version constraints
+│   └── terraform.tfvars        # Environment-specific values
+│
+├── workloads/
+│   ├── Dockerfile              # PowerShell-based batch workload image
+│   ├── powershell-scripts/     # PowerShell scripts executed by Batch jobs
+│   └── queryFiles/             # SQL queries executed against the database
+│
+└── README.md
+
 ```
 ---
 
