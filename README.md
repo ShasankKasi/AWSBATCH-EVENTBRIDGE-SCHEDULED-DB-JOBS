@@ -18,7 +18,7 @@ All infrastructure is provisioned using **Terraform**, and workloads are package
 The complete architecture, Terraform implementation, security model, and troubleshooting details are explained in the blog post:
 
 👉 **Running Scheduled Database Workloads Using AWS Batch and EventBridge Scheduler**  
-🔗 *<BLOG_URL_HERE>*
+🔗 https://medium.com/@ShasankReddy4/running-scheduled-database-workloads-using-aws-batch-and-eventbridge-scheduler-8fffbb1f0ee4
 
 ---
 
