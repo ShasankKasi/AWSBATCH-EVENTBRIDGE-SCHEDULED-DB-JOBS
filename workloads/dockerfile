@@ -7,6 +7,7 @@ RUN apk add --no-cache \
     curl \
     mariadb-client
 
+    
 COPY powershell-scripts/ ./powershell-scripts/
 COPY queryFiles/ ./queryFiles/
 
